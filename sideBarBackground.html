@@ -49,8 +49,12 @@
 			height: 50px;
 			background-color: #00a087;
 		}*/
+		.footer__top-buttons {
+			color: white;
+		}
 	</style>
   	<head>
+		  <meta charset="utf8">
   		<script src="jquery-1.11.0.js"></script>
   		<script src="evalHelpers.js"></script>
 		<script src="sideBarBackground.js"></script>
@@ -62,21 +66,21 @@
 			</tr>
 		</div>
 		<nav class="footer">
-			<div>
-				<button type="button" id="lastMatch">Prev</button>
+			<div class="footer__top-buttons">
+				<button type="button" id="lastMatch">Пред</button>
 				<a id="curMatch">-</a>
 				<a>/</a>
 				<a id="numMatches">0</a>
-				<button type="button" id="nextMatch">Next</button>
-				<input type="checkbox" id="onlyVis">Only Visible</input>
+				<button type="button" id="nextMatch">След</button>
+				<input type="checkbox" id="onlyVis">Только видимые</input>
 			</div>
 			<div>
-				<button type="button" id="getSelectorsButton">Get Selectors</button>
-				<button type="button" id="copySel">Selector to Clipboard</button>
+				<button type="button" id="getSelectorsButton">Получить</button>
+				<button type="button" id="copySel">Копировать</button>
 			</div>
 			<div>
 				<tr>
-					<td>Hold the ctrl, alt, meta, or shift key to 'not' the selector.</td>
+					<td>Удерживайте ctrl, alt, meta или shift для добавления not селектора.</td>
 				</tr>
 			</div>
 		</nav>
